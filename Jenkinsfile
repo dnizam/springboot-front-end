@@ -35,6 +35,7 @@ pipeline{
                 sh '''
                     echo "${Image_name}"
                     echo "build and push docker image for internal app ..!"
+                    cd spring-boot-form-submit-example
                     pwd
                     gcloud builds submit --tag ${Image_name} .
                 ''' 
