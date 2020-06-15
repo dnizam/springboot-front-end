@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: events-web
-        image: gcr.io/myproject-278611/spring-frontend:V_3
+        image: gcr.io/myproject-278611/spring-frontend:V_4
         env:
         - name: PORT
           value: "8085"
