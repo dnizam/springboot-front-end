@@ -35,7 +35,7 @@ public class EmployeeController {
         modelMap.put("employeeName", employeeName);
         modelMap.put("employeeEmail", employeeEmail);
 	//save the employee to database
-        String baseUrl = "http://spring-boot-mysql-hibernate:8082/user/save?email="+employeeEmail+"&name="+employeeName;
+        String baseUrl = "http://events-data-service:8082/user/save?email="+employeeEmail+"&name="+employeeName;
         System.out.println(baseUrl);
 		RestTemplate restTemplate = new RestTemplate();
 		ResponseEntity<String> response=null;
