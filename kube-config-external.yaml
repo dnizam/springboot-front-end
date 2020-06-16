@@ -58,7 +58,7 @@ spec:
     kind: Deployment
     name: events-web
   minReplicas: 1
-  maxReplicas: 6
+  maxReplicas: 3
   metrics:
   - type: Resource
     resource:
